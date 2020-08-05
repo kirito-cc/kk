@@ -43,7 +43,15 @@ public static final Integer USER_TYPE_NORMAL = 1;
  */
 public static final Integer OPEN_TRUE = 1;
 public static final Integer OPEN_FALSE = 0;
+/**
+ * 用户默认密码
+ */
+public static final String USER_DEFAULT_PWD="123456";
 
+/**
+ * 商品默认图片
+ */
+public static final String IMAGES_DEFAULTGOODSIMG_PNG = "images/defaultgoodsimg.png";
 
 
 

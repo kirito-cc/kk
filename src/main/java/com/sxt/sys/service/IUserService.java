@@ -12,5 +12,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2020-07-09
  */
 public interface IUserService extends IService<User> {
+	/**
+	 * 保存用户和角色之间的关系
+	 */
+	public void saveUserRole( Integer uid,Integer[]ids);
 
 }

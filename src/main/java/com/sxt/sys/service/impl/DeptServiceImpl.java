@@ -3,6 +3,7 @@ package com.sxt.sys.service.impl;
 import java.io.Serializable;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -20,6 +21,7 @@ import com.sxt.sys.service.IDeptService;
  * @since 2019-09-23
  */
 @Service
+@Transactional
 public class DeptServiceImpl extends ServiceImpl<DeptMapper, Dept> implements IDeptService {
 	
 	@Override
@@ -37,5 +39,16 @@ public class DeptServiceImpl extends ServiceImpl<DeptMapper, Dept> implements ID
 	public boolean removeById(Serializable id) {
 		return super.removeById(id);
 	}
+	@Override
+	public Dept getById(Serializable id) {
+		
+		return super.getById(id);
+	}
+	@Override
+	public boolean save(Dept entity) {
+		
+		return super.save(entity);
+	}
+	
 
 }
